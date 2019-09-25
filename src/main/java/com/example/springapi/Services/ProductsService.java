@@ -15,15 +15,17 @@ public class ProductsService {
 
 
     public List<Products> getAllProducts() {
-          List<Products> productsList = productsRepository.findAll();
-    if(productsList.size() > 0) {
-        return productsList;
-    }else {
-        return new ArrayList<Products>();
-    }
+        List<Products> productsList = productsRepository.findAll();
+        if (productsList.size() > 0) {
+            return productsList;
+        } else {
+            return new ArrayList<Products>();
+        }
+    };
 
-    }
-
+    public List<Products> getLatestProducts () {
+        return  productsRepository.getLatestProducts();
+    };
 
 
 }

@@ -8,13 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ProductsRepository
-        extends JpaRepository<Products, Long> {
+public interface CategoryRepository extends JpaRepository<Products, Long> {
 
-    @Query(
-            value = "SELECT * FROM products ORDER BY  id desc limit 6",
-            nativeQuery = true
-    )
-    List<Products> getLatestProducts();
 
 }

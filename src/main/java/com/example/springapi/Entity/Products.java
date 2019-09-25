@@ -21,9 +21,11 @@ public class Products {
     private Long id;
 
     @Column(name="product_name")
-    private String product_name;
+    private String productsName;
     @Column(name="description")
     private String description;
     @Column(name="price")
     private int price;
+    @Column(name="imagePath")
+    private String imagePath;
 }

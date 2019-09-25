@@ -2,9 +2,13 @@ package com.example.springapi.Controllers;
 
 
 import com.example.springapi.Entity.Book;
+import com.example.springapi.Entity.Products;
 import com.example.springapi.ExceptionHandling.BookNotFoundException;
 import com.example.springapi.Repository.BookRepository;
+import com.example.springapi.Services.ProductsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,10 +16,13 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+@RequestMapping("/products")
+
 public class BookController {
 
     @Autowired
     BookRepository bookRepository;
+    ProductsService productsService;
 
     //Create new Note
     @PostMapping("books")
@@ -24,8 +31,6 @@ public class BookController {
     }
 
 
-    // Get All Products
-    @GetMapping("/allProducts")
 
 
     //Get All Notes

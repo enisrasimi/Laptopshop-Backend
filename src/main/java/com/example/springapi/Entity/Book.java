@@ -28,25 +28,5 @@ public class Book {
     @Column(name="isbn")
     private String isbn;
 
-//    @OneToOne(cascade = {CascadeType.REMOVE})
-//    @JoinColumn(name="employee_id")
-//    private Employee employee;
-
-
-
-
-
-
-
-
 
 }
-
-
-
-// creating table with query
-//create table book(
-//        id int not null primary key,
-//        name varchar_ignorecase(50) not null,
-//        author varchar_ignorecase(50) not null,
-//        price int);

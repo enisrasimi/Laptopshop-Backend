@@ -2,6 +2,7 @@ package com.example.springapi.Controllers;
 
 import com.example.springapi.Entity.Products;
 import com.example.springapi.Services.ProductsService;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -15,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/products")
-
+@NoArgsConstructor
 
 public class ProductsController {
     @Autowired

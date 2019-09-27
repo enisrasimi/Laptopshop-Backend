@@ -12,7 +12,7 @@ public interface ProductsRepository
         extends JpaRepository<Products, Long> {
 
     @Query(
-            value = "SELECT * FROM products ORDER BY  id desc limit 6",
+            value = "SELECT * FROM products ORDER BY  id desc limit 12",
             nativeQuery = true
     )
     List<Products> getLatestProducts();

@@ -17,4 +17,36 @@ public interface ProductsRepository
     )
     List<Products> getLatestProducts();
 
+
+    @Query(
+            value="select * from products where category_id = 1",
+            nativeQuery = true
+    )
+    List<Products> getLaptops();
+
+    @Query(
+            value="select * from products where category_id = 2",
+            nativeQuery = true
+    )
+    List<Products> getDesktops();
+
+    @Query(
+            value="select * from products where category_id = 3",
+            nativeQuery = true
+    )
+    List<Products> getTV();
+
+    @Query(
+            value="select * from products where category_id = 4",
+            nativeQuery = true
+    )
+    List<Products> getAllinOne();
+
+
+
+
+
+
+
+
 }

@@ -38,4 +38,32 @@ public class ProductsController {
         return list;
     }
 
+    @CrossOrigin(origins = "*")
+    @GetMapping("/laptops")
+    public List<Products> getLaptops() {
+        List<Products> list = productsService.getLaptops();
+        return  list;
+    }
+
+    @CrossOrigin(origins = "*")
+    @GetMapping("/desktops")
+    public List<Products> getDesktops() {
+        List<Products> list = productsService.getDesktops();
+        return  list;
+    }
+
+    @CrossOrigin(origins = "*")
+    @GetMapping("/allinone")
+    public List<Products> getAllinOne() {
+        List<Products> list = productsService.getAllinOne();
+        return  list;
+    }
+
+    @CrossOrigin(origins = "*")
+    @GetMapping("/tv")
+    public List<Products> getTV() {
+        List<Products> list = productsService.getTV();
+        return  list;
+    }
+
 }

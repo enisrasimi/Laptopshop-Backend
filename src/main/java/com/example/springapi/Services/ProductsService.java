@@ -27,5 +27,21 @@ public class ProductsService {
         return  productsRepository.getLatestProducts();
     };
 
+    public List<Products> getLaptops() {
+        return productsRepository.getLaptops();
+    };
+    public List<Products> getDesktops() {
+        return productsRepository.getDesktops();
+    };
+
+    public List<Products> getAllinOne() {
+        return productsRepository.getAllinOne();
+    };
+
+    public List<Products> getTV() {
+        return productsRepository.getTV();
+    };
+
+
 
 }

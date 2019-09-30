@@ -1,22 +1,20 @@
-package com.example.springapi.Controllers;
+package com.example.springapi.controllers;
 
-import com.example.springapi.Entity.Products;
-import com.example.springapi.Services.ProductsService;
+import com.example.springapi.entity.Products;
+import com.example.springapi.repository.ProductsRepository;
+import com.example.springapi.services.ProductsService;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")
-@NoArgsConstructor
 
 public class ProductsController {
     @Autowired
@@ -42,28 +40,36 @@ public class ProductsController {
     @GetMapping("/laptops")
     public List<Products> getLaptops() {
         List<Products> list = productsService.getLaptops();
-        return  list;
+        return list;
     }
 
     @CrossOrigin(origins = "*")
     @GetMapping("/desktops")
     public List<Products> getDesktops() {
         List<Products> list = productsService.getDesktops();
-        return  list;
+        return list;
     }
 
     @CrossOrigin(origins = "*")
     @GetMapping("/allinone")
     public List<Products> getAllinOne() {
         List<Products> list = productsService.getAllinOne();
-        return  list;
+        return list;
     }
 
     @CrossOrigin(origins = "*")
     @GetMapping("/tv")
     public List<Products> getTV() {
         List<Products> list = productsService.getTV();
-        return  list;
+        return list;
     }
+
+    @CrossOrigin(origins = "*")
+    @GetMapping("{id}")
+    public ResponseEntity<Products> getProductById(@PathVariable("id") Long id) {
+        Products product = productsService.getProductById(id);
+        return new ResponseEntity<Products>(product, new HttpHeaders(), HttpStatus.OK);
+    }
+
 
 }

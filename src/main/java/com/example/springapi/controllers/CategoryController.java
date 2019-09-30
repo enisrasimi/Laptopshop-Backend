@@ -1,8 +1,7 @@
-package com.example.springapi.Controllers;
+package com.example.springapi.controllers;
 
-import com.example.springapi.Entity.Category;
-import com.example.springapi.Entity.Products;
-import com.example.springapi.Services.CategoryService;
+import com.example.springapi.entity.Category;
+import com.example.springapi.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

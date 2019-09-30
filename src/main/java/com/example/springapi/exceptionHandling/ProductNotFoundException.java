@@ -1,4 +1,4 @@
-package com.example.springapi.ExceptionHandling;
+package com.example.springapi.exceptionHandling;
 
 public class ProductNotFoundException extends Exception{
     private long product_id;

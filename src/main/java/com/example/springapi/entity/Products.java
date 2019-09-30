@@ -1,4 +1,4 @@
-package com.example.springapi.Entity;
+package com.example.springapi.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

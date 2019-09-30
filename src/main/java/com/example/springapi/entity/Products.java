@@ -21,6 +21,7 @@ public class Products {
     @Column(name="id")
     private Long id;
 
+
     @Column(name="product_name")
     private String productName;
     @Column(name="description")
@@ -29,6 +30,8 @@ public class Products {
     private double price;
     @Column(name="imagePath")
     private String imagePath;
+    @Column(name="p_Image_Path")
+    private String pImagePath;
 
     @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name="category_id")

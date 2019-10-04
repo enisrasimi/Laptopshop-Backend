@@ -12,7 +12,7 @@
     <artifactId>spring-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-api</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Laptopshop Backend</description>
 
     <properties>
         <java.version>11</java.version>

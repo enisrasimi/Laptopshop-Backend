@@ -15,7 +15,7 @@
     <description>Beginning Shop application</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
     </properties>
 
     <dependencies>
@@ -74,11 +74,7 @@
             <version>0.9.1</version>
         </dependency>
 
-        <!-- FLYWAY DEPENDENCY -->
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt -->
         <dependency>

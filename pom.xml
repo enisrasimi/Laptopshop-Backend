@@ -8,87 +8,66 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ucx.training</groupId>
-    <artifactId>shop</artifactId>
-    <version>1.2.0-SNAPSHOT</version>
-    <name>shop</name>
-    <description>Beginning Shop application</description>
+    <groupId>com.example</groupId>
+    <artifactId>spring-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-api</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>8</java.version>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>org.modelmapper</groupId>
-            <artifactId>modelmapper</artifactId>
-            <version>2.3.2</version>
-        </dependency>
-
-        <!--Dependency for email-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-mail</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!-- Dependency for Stripe  -->
-        <dependency>
-            <groupId>com.stripe</groupId>
-            <artifactId>stripe-java</artifactId>
-            <version>11.6.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
+            <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
+            <optional>true</optional>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
         <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.1</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
-
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt -->
         <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-jwt</artifactId>
-            <version>1.0.10.RELEASE</version>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
         </dependency>
-
         <dependency>
-            <groupId>com.vladmihalcea</groupId>
-            <artifactId>hibernate-types-5</artifactId>
-            <version>1.1.1</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts-tiles</artifactId>
+            <version>1.3.8</version>
+        </dependency>
     </dependencies>
 
     <build>

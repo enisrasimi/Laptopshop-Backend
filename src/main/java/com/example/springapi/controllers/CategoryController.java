@@ -24,7 +24,7 @@ public class CategoryController {
      return list;
     }
 
-    @GetMapping("/byCategorie")
+    @GetMapping("/byCategories")
         public List<Category> getAllByCategory(@PathVariable(value = "id") int id){
         List<Category> lisByCategory = categoryService.findAllByCategory();
         return lisByCategory;

@@ -11,6 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>spring-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>Laptopshop</name>
     <description>Backend for laptopshop</description>
 

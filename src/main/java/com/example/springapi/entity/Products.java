@@ -30,8 +30,19 @@ public class Products {
     private double price;
     @Column(name="imagePath")
     private String imagePath;
-    @Column(name="p_Image_Path")
-    private String pImagePath;
+    @Column(name="ram")
+    private String ram;
+    @Column(name="cpu")
+    private String cpu;
+    @Column(name="graphics")
+    private String graphics;
+    @Column(name="size")
+    private String size;
+    @Column(name="ssd")
+    private String ssd;
+
+
+
 
     @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name="category_id")

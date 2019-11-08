@@ -29,6 +29,7 @@ public class ProductsController {
         return new ResponseEntity<List<Products>>(list, new HttpHeaders(), HttpStatus.OK);
     }
 
+
     //Get 6 last records on table
     @CrossOrigin(origins = "*")
     @GetMapping("/latestProducts")
